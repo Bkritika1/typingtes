@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typing Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Speed Typing Test</h1>
+
+    <div class="timer-buttons">
+      <button onclick="startTest(15)" >15s</button>
+      <button onclick="startTest(30)" >30s</button>
+      <button onclick="startTest(60)">60s</button>
+      <button onclick="startTest(120)">120s</button>
+    </div>
+
+    <div class="stats">
+      <div class="stat" id="Time"><strong>Time </strong> <span id="time-left">0s</span></div>
+      <div class="stat" id="Accuracy"><strong>Accuracy</strong> <span id="accuracy">0%</span></div>
+      <div class="stat" id="Errors"><strong>Errors</strong> <span id="errors">0</span></div>
+    </div>
+
+    <div id="text-display" class="text-display"></div>
+
+    <p><strong>Your Name:</strong> <span id="your-name">KRITIKA</span></p>
+    <p><strong>Last WPM:</strong> <span id="last-wpm">0</span></p>
+
+    
+
+    <textarea id="input-field" placeholder="Start typing here..." ></textarea>
+  </div>
+  <div id="popup" style="display: none;" class="popup">
+    <div class="popup-content">
+      <h2>Test Complete!</h2>
+      <p id="result-summary"></p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typing Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Speed Typing Test</h1>
+
+    <div class="timer-buttons">
+      <button data-time="15">15s</button>
+      <button data-time="30">30s</button>
+      <button data-time="60">60s</button>
+      <button data-time="120">120s</button>
+    </div>
+
+    <div class="stats">
+      <div class="stat" id="Time"><strong>Time </strong> <span id="time-left">0s</span></div>
+      <div class="stat" id="Accuracy"><strong>Accuracy</strong> <span id="accuracy">0%</span></div>
+      <div class="stat" id="Errors"><strong>Errors</strong> <span id="errors">0</span></div>
+    </div>
+
+    <div id="text-display" class="text-display"></div>
+
+    <div class="div">
+      <p><strong>Your Name:</strong> <span id="your-name">KRITIKA</span></p>
+    <p><strong>Last WPM:</strong> <span id="last-wpm">0</span></p>
+    </div>
+
+    <textarea id="input-field" placeholder="Start typing here..." ></textarea>
+  </div>
+
+  <div id="popup" style="display: none;" class="popup">
+    <div class="popup-content">
+      <h2>Test Complete!</h2>
+      <p id="result-summary"></p>
+      <button id="close-btn">Close</button>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>

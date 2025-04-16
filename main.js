@@ -70,7 +70,7 @@ function endTest() {
 }
 
 function closePopup() {
-  document.getElementById("popup").style.display = "block";
+  document.getElementById("popup").style.display = "none";
 }
 
 function bindEvents() {
@@ -121,7 +121,29 @@ function bindEvents() {
     document.getElementById("errors").textContent = errorCount;
   });
 
-  document.getElementById("popup-close").addEventListener("click", closePopup);
+  // document.getElementById("close-btn").addEventListener("click", function(){
+  //   document.getElementById("popup").style.display = "none";
+  //   // document.getElementById("input-field").value = "";
+  //   // document.getElementById("input-field").disabled = false;     
+
+  //   // document.getElementById("input-field").focus();
+  //   // document.getElementById("text-display").classList.remove("highlighted");      
+
+    
+  //   closePopup();
+  // });
+
+  
+document.getElementById("close-btn").addEventListener("click",  function(){
+  const control = document.getElementById("popup");
+ 
+  
+  if(control.style.display=== "none"){
+      control.style.display ="block";
+  }else{
+      control.style.display ="none";
+  }
+});
 }
 
 function init() {

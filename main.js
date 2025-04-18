@@ -121,18 +121,7 @@ function bindEvents() {
     document.getElementById("errors").textContent = errorCount;
   });
 
-  // document.getElementById("close-btn").addEventListener("click", function(){
-  //   document.getElementById("popup").style.display = "none";
-  //   // document.getElementById("input-field").value = "";
-  //   // document.getElementById("input-field").disabled = false;     
-
-  //   // document.getElementById("input-field").focus();
-  //   // document.getElementById("text-display").classList.remove("highlighted");      
-
-    
-  //   closePopup();
-  // });
-
+  
   
 document.getElementById("close-btn").addEventListener("click",  function(){
   const control = document.getElementById("popup");
